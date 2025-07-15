@@ -10,12 +10,12 @@ const Hero = () => (
         <p>Join a growing community helping each other succeed on the path to Canadian citizenship, with honest advice and shared experience.
 </p>
         <div className={styles.ctas}>
-          <button type="button" className={styles.primaryBtn}>Join the community <span className={styles.arrow}>&rarr;</span></button>
+          <a href="https://www.facebook.com/share/g/1a3ftjVQ86/" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>Join the community <span className={styles.arrow}>&rarr;</span></a>
         </div>
       </div>
       <div className={styles.right}>
         <div className={styles.imageWrap}>
-          <img src="/img/hero.jpg" alt="volunteers" className={styles.heroImg} />
+          <img src="/img/hero.jpg" alt="Newcomers volunteering in Canada" className={styles.heroImg} />
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ const BenefitsSection = () => (
       </div>
       <div className={styles.right}>
         <div className={styles.imageWrap}>
-          <img src="/img/benefit.jpg" alt="Community" className={styles.heroImg} />
+          <img src="/img/benefit.jpg" alt="Canadian newcomer community" className={styles.heroImg} />
           <div className={styles.floatingCard}>
             <span className={styles.floatingTitle}>Real people, real support</span>
             <span className={styles.floatingDesc}>Get answers and encouragement from those who’ve been there.</span>

@@ -53,7 +53,7 @@ const ToolsSection = () => (
                 <div className={styles.cardPill}>{tool.desc}</div>
                 <div style={{ marginTop: 12, fontWeight: 700, color: '#861F2B', fontSize: '1.08rem' }}>Coming soon</div>
               </div>
-              <img src={tool.img} alt="" className={styles.cardImg} />
+              <img src={tool.img} alt={tool.number === 'Checklist' ? 'Checklist tool' : tool.number === 'Calculator' ? 'Calculator tool' : 'FAQ tool'} className={styles.cardImg} />
             </div>
           ) : (
             <a href={tool.link} className={`${styles.card} ${tool.bg}`} key={i}>
@@ -62,7 +62,7 @@ const ToolsSection = () => (
                 <div className={styles.cardSubtitle}>{tool.subtitle}</div>
                 <div className={styles.cardPill}>{tool.desc}</div>
               </div>
-              <img src={tool.img} alt="" className={styles.cardImg} />
+              <img src={tool.img} alt={tool.number === 'Checklist' ? 'Checklist tool' : tool.number === 'Calculator' ? 'Calculator tool' : 'FAQ tool'} className={styles.cardImg} />
               <div className={styles.arrowBtn}><ArrowIcon /></div>
             </a>
           )

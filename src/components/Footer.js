@@ -10,9 +10,9 @@ const Footer = () => (
       </div>
       <nav className={styles.nav}>
         <a href="/" className={styles.link}>Home</a>
-        <a href="#tools" className={styles.link}>Tools</a>
-        <a href="#community" className={styles.link}>Community</a>
-        <a href="#faq" className={styles.link}>FAQ</a>
+        <a href="/calculator" className={styles.link}>Day Calculator</a>
+        <a href="/faq" className={styles.link}>Post eCOPR FAQ</a>
+        <a href="https://coff.ee/settleincanada" className={styles.link} target="_blank" rel="noopener noreferrer">Buy us a coffee</a>
       </nav>
     </div>
     <div className={styles.copyright}>
