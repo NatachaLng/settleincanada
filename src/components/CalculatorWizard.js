@@ -137,7 +137,7 @@ const CalculatorWizard = () => {
               <label className={styles.fieldLabel}>
                 Date you arrived in Canada as a temporary resident
                 <span
-                  className={styles.tooltipIcon}
+                  className={styles.tooltipIcon + ' ' + styles.tooltipRight}
                   onMouseEnter={() => setShowArrivalTip(true)}
                   onMouseLeave={() => setShowArrivalTip(false)}
                 >&#9432;

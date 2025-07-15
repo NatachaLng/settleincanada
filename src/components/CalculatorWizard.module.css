@@ -120,6 +120,11 @@
   right: 0;
   transform: none;
 }
+.tooltipRight .tooltip {
+  left: auto;
+  right: 0;
+  transform: none;
+}
 .dateInput {
   width: auto;
   min-width: 180px;
