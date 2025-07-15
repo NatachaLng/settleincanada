@@ -71,9 +71,23 @@
 }
 @media (max-width: 600px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
     width: 100%;
-    box-sizing: border-box;
+    margin-top: 1.2rem;
+  }
+  .link {
+    width: 100%;
+    text-align: left;
+    padding: 0.7rem 0;
+  }
+  .left {
+    margin-bottom: 0.7rem;
   }
 } 
