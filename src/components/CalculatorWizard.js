@@ -79,7 +79,7 @@ const CalculatorWizard = () => {
       }}>
         <div style={{
           display: 'inline-block',
-          background: '#f7f8fa',
+          background: '#fff',
           color: '#222',
           fontSize: '1.05rem',
           fontWeight: 600,
