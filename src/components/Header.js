@@ -4,10 +4,10 @@ import styles from './Header.module.css';
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.container}>
-      <div className={styles.logo}>
+      <a href="/" className={styles.logo} style={{textDecoration: 'none'}}>
         <img src="/img/logo.png" alt="SettleInCanada logo" className={styles.logoImg} />
         Settle in Canada
-      </div>
+      </a>
       <nav className={styles.nav}>
         <div className={styles.navLinks}>
           <a href="/calculator">Day Calculator</a>
