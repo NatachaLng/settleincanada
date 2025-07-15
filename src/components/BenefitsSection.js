@@ -32,7 +32,7 @@ const BenefitsSection = () => (
             </div>
           ))}
         </div>
-        <button type="button" className={styles.ctaBtn}>Join the Community</button>
+        <a href="https://www.facebook.com/share/g/1J1tPNEDDh/" target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>Join the Community</a>
       </div>
       <div className={styles.right}>
         <div className={styles.imageWrap}>
