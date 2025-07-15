@@ -8,7 +8,8 @@ const tools = [
     desc: 'Track every requirement for Canadian citizenship.',
     bg: styles.cardBlue,
     img: '/img/tool01.png',
-    link: '#checklist',
+    link: null, // Not clickable for now
+    comingSoon: true,
   },
   {
     number: 'Calculator',
@@ -20,13 +21,21 @@ const tools = [
   },
   {
     number: 'FAQ',
-    subtitle: 'Citizenship FAQ',
+    subtitle: 'Post eCOPR FAQ',
     desc: 'Get answers to the most common questions.',
     bg: styles.cardYellow,
     img: '/img/tool03.png',
     link: '#faq',
   },
 ];
+
+const ArrowIcon = () => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="14" fill="#fff"/>
+    <path d="M10.5 14H17.5" stroke="#181818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M15 11.5L17.5 14L15 16.5" stroke="#181818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
 const ToolsSection = () => (
   <section className={styles.section}>
@@ -36,15 +45,27 @@ const ToolsSection = () => (
       <p className={styles.subtitle}>Everything you need to track your progress, calculate your eligibility, and get answers—right at your fingertips.</p>
       <div className={styles.cards}>
         {tools.map((tool, i) => (
-          <a href={tool.link} className={`${styles.card} ${tool.bg}`} key={i}>
-            <div className={styles.cardContent}>
-              <div className={styles.cardNumber}>{tool.number}</div>
-              <div className={styles.cardSubtitle}>{tool.subtitle}</div>
-              <div className={styles.cardPill}>{tool.desc}</div>
+          tool.comingSoon ? (
+            <div className={`${styles.card} ${tool.bg}`} key={i} style={{ opacity: 0.7, cursor: 'not-allowed', position: 'relative' }}>
+              <div className={styles.cardContent}>
+                <div className={styles.cardNumber}>{tool.number}</div>
+                <div className={styles.cardSubtitle}>{tool.subtitle}</div>
+                <div className={styles.cardPill}>{tool.desc}</div>
+                <div style={{ marginTop: 12, fontWeight: 700, color: '#861F2B', fontSize: '1.08rem' }}>Coming soon</div>
+              </div>
+              <img src={tool.img} alt="" className={styles.cardImg} />
             </div>
-            <img src={tool.img} alt="" className={styles.cardImg} />
-            <div className={styles.arrowBtn}>&rarr;</div>
-          </a>
+          ) : (
+            <a href={tool.link} className={`${styles.card} ${tool.bg}`} key={i}>
+              <div className={styles.cardContent}>
+                <div className={styles.cardNumber}>{tool.number}</div>
+                <div className={styles.cardSubtitle}>{tool.subtitle}</div>
+                <div className={styles.cardPill}>{tool.desc}</div>
+              </div>
+              <img src={tool.img} alt="" className={styles.cardImg} />
+              <div className={styles.arrowBtn}><ArrowIcon /></div>
+            </a>
+          )
         ))}
       </div>
     </div>

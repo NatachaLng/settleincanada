@@ -172,4 +172,28 @@
   .heroImg {
     min-height: 200px;
   }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .statsRow {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .statCard {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
 } 

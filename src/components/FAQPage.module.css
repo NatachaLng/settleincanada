@@ -349,4 +349,27 @@
   .faqCard {
     padding: 1.1rem 1rem 1.1rem 1rem;
   }
+  .faqTabsRow {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 0.5rem;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faqTabsRow::-webkit-scrollbar {
+    display: none;
+  }
+  .faqTab, .faqTabActive {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
 } 

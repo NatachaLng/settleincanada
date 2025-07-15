@@ -294,10 +294,25 @@
   .hero {
     padding: 1.2rem 0 0.5rem 0;
   }
-  .left h1 {
-    font-size: 2rem;
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .left {
+    order: 1;
+    max-width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .right {
+    order: 2;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
   .imageWrap {
+    margin: 0 auto;
     border-radius: 1.2rem;
     min-width: 0;
     max-width: 100vw;
