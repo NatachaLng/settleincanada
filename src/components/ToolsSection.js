@@ -16,7 +16,7 @@ const tools = [
     desc: 'Quickly find out when you’re eligible to apply.',
     bg: styles.cardBlack,
     img: '/img/tool02.png',
-    link: '#calculator',
+    link: '/calculator',
   },
   {
     number: 'FAQ',

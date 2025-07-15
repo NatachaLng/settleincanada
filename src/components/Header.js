@@ -10,12 +10,9 @@ const Header = () => (
       </div>
       <nav className={styles.nav}>
         <div className={styles.navLinks}>
-          <div className={styles.dropdown}>
-            <button className={styles.dropdownBtn}>All Pages <span className={styles.caret}>▼</span></button>
-            {/* Dropdown menu placeholder */}
-          </div>
-          <a href="#programs">Programs</a>
-          <a href="#blogs">Blogs</a>
+          <a href="/calculator">Day Calculator</a>
+          <a href="/checklist">Checklist</a>
+          <a href="/faq">FAQ</a>
         </div>
         <a href="#donate" className={styles.donateBtn}>Donate Now</a>
       </nav>
