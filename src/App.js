@@ -6,6 +6,7 @@ import ToolsSection from './components/ToolsSection';
 import BenefitsSection from './components/BenefitsSection';
 import Footer from './components/Footer';
 import CalculatorWizard from './components/CalculatorWizard';
+import FAQPage from './components/FAQPage';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             }
           />
           <Route path="/calculator" element={<CalculatorWizard />} />
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
         <Footer />
       </div>
