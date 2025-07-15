@@ -1,0 +1,169 @@
+.wizardWrap {
+  max-width: 540px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.stepsNav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 0.5rem;
+}
+.step, .activeStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  padding: 0.5rem 0;
+  border-radius: 1.2rem;
+  background: #f7f8fa;
+  transition: background 0.2s, color 0.2s;
+}
+.activeStep {
+  background: #007aff;
+  color: #fff;
+}
+.completedStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  padding: 0.5rem 0;
+  border-radius: 1.2rem;
+  background: #e6f9e8;
+  color: #1a7f3c;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.stepNum {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.stepLabel {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.stepContent {
+  min-height: 120px;
+  margin-bottom: 2.2rem;
+  text-align: left;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+.btn {
+  background: #181818;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.9rem 2.1rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn:disabled {
+  background: #ececec;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.btn:not(:disabled):hover {
+  background: #007aff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+.fieldLabel {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  gap: 0.5rem;
+  color: #181818;
+}
+.tooltipIcon {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: #888;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.1em;
+}
+.tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: 120%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.8rem;
+  font-size: 0.98rem;
+  white-space: pre-line;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  z-index: 10;
+  min-width: 220px;
+  max-width: 320px;
+  pointer-events: none;
+}
+.fieldLabel[style*="margin-top"] .tooltipIcon .tooltip {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+.dateInput {
+  width: auto;
+  min-width: 180px;
+  max-width: 100%;
+  padding: 0.7rem 1.1rem;
+  border-radius: 1.2rem;
+  border: 1px solid #ececec;
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
+  background: #f7f8fa;
+  color: #181818;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+  appearance: none;
+}
+.dateInput:focus {
+  border: 1.5px solid #007aff;
+  background: #fff;
+}
+.dateInput::-webkit-calendar-picker-indicator {
+  filter: invert(36%) sepia(99%) saturate(749%) hue-rotate(186deg) brightness(95%) contrast(92%);
+  cursor: pointer;
+  height: 1.5em;
+  width: 1.5em;
+}
+.dateInput::-webkit-input-placeholder {
+  color: #bbb;
+}
+.dateInput::-moz-placeholder {
+  color: #bbb;
+}
+.dateInput:-ms-input-placeholder {
+  color: #bbb;
+}
+.dateInput::placeholder {
+  color: #bbb;
+}
+@media (max-width: 600px) {
+  .wizardWrap {
+    padding: 1.2rem 0.5rem;
+  }
+  .stepsNav {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+} 
