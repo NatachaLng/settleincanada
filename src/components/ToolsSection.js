@@ -25,7 +25,7 @@ const tools = [
     desc: 'Get answers to the most common questions.',
     bg: styles.cardYellow,
     img: '/img/tool03.png',
-    link: '#faq',
+    link: '/faq',
   },
 ];
 
