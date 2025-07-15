@@ -10,8 +10,8 @@ const Hero = () => (
         <p>Join a growing community helping each other succeed on the path to Canadian citizenship, with honest advice and shared experience.
 </p>
         <div className={styles.ctas}>
-          <a href="#" className={styles.primaryBtn}>Join the community <span className={styles.arrow}>&rarr;</span></a>
-          <a href="#" className={styles.secondaryBtn}>Learn More</a>
+          <button type="button" className={styles.primaryBtn}>Join the community <span className={styles.arrow}>&rarr;</span></button>
+          <button type="button" className={styles.secondaryBtn}>Learn More</button>
         </div>
       </div>
       <div className={styles.right}>

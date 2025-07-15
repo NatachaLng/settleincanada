@@ -17,8 +17,6 @@ const CalculatorWizard = () => {
   const [showPrTip, setShowPrTip] = useState(false);
   const [daysOutsideTemp, setDaysOutsideTemp] = useState('');
   const [daysOutsidePr, setDaysOutsidePr] = useState('');
-  const [showTempTip, setShowTempTip] = useState(false);
-  const [showPrDaysTip, setShowPrDaysTip] = useState(false);
 
   // --- Calculation logic for temp resident period ---
   function calculateTempResidentDays() {
